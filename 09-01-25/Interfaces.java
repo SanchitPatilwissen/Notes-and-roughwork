@@ -50,7 +50,7 @@ public class Interfaces{
 
         Y y1 = c1;
         y1.mul();
-        y1.mul();
+        y1.div();
 
         System.out.println("-------------------------------------------------------------------------");
 
