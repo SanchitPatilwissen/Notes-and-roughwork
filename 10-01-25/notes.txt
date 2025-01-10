@@ -39,3 +39,26 @@ package abc.xyz.com
 command : javac -d . A.java (Compile with this to create package)
 
 java abc.xyz.com.A (Running)
+
+
+
+Abstract, Static, final
+ _____________________________________________
+|         | Variables |Classes    |Methods    |
+|_________|___________|___________|___________|
+|Abstract |   N       | Y         | Y         |
+|_________|___________|___________|___________|
+|Static   |   Y       | N         | Y         |
+|_________|___________|___________|___________|
+|Final    |   Y       | Y         | Y         |
+|_________|___________|___________|___________|
+
+
+Note : 
+
+1) Static methods can only access static Variables.
+2) Final classes are the classes which can't be inherited.
+3) Final methods cannot be over ridden.
+4) For a method to be abstract the class should be abstract but not vice versa.
+5) Pure Abstract Class --> All methods are abstract.(Just like interface)
+6) Eg:- of static class --> math, System. (All methods and variables are static).
