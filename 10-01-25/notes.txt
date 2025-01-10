@@ -1,0 +1,41 @@
+Access Modifiers : 
+
+1) Class can be only public and default. Can't be private or protected. Inner classes can be private/protected(Nested classes).
+
+2) Default scope means class is accessible in same package.
+
+3) Public Class is accessible by everyone including inter package classes.
+
+4) Private is not accessible by anyone except within the class
+
+5) Protected access --> All package classes can access it but only inherited subclasses in other packages can access it.
+
+6) Default scope --> All classes in a package can access it.
+
+7) Access modifiers in ascending order:
+
+private, default, protected, public.
+
+8) Protected scope is directly accessed by subclasses.
+
+
+Creating a package : 
+
+1) IF 
+
+   p1(A, B, C)
+   |
+   |
+   p2(D, E, F)
+
+p2 is a sub package of p1.
+
+To access all classes we need to import p1.*, import p1.p2.*
+
+2) Java code (A.java)
+
+package abc.xyz.com
+
+command : javac -d . A.java (Compile with this to create package)
+
+java abc.xyz.com.A (Running)
