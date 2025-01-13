@@ -1,0 +1,57 @@
+Exception Handling : Even if error occurs(Runtime errors), then the program should not terminate and continue.
+
+# 2 types of errors :
+1) Compile time error (syntactical)
+2) Runtime error (Logical)
+    Further 2 types of logical errors : 
+    1) error --> Cannot be handled at Runtime (eg :- memory overflow)
+    2) Exception --> Can be handled at Runtime (eg :- Divide by zero, null point)
+        2 types of exceptions : 
+        1) Compile time exception --> Will be checked at compile time itself. (Going to affect the system resources)
+        2) Runtime exception --> Will be checked at runtime. (Not going to affect the hardware resources/system resurces)
+
+# Keywords in exception handling : 
+
+1) try
+
+    safe-guarding a block of code. Exceptions maybe raised in this block.
+
+2) catch
+
+    Exception is handled.
+
+3) finally
+
+    Executed if exception is handled/ not handled. IF exception occurs then the code executes after exception is handled. 
+
+    Only scenario in which finally block is not executed --> When we use system.exit() 
+
+4) throw
+
+    To raise exceptions manually.
+
+5) throws
+
+    To signify that in a method if exception is throwed then the method is not going to handle that exception. It is handled by one who has called it.
+
+# Creating custom exception : 
+
+For unchecked exception : extending / inheriting RunTimeException class.
+
+# By default JVM handles the exception. These are 3 things done by JVM: 
+
+1) It prints the stack face
+2) The name of the exception and reason behind it.
+3) Terminate the program.
+
+Note :
+
+1) We cannot have try block without catch or finally. Atleast one of them should be present.
+
+2) This is not allowed.
+
+   try{
+
+   }
+   sout()
+   catch()
