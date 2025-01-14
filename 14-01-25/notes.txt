@@ -1,3 +1,9 @@
 Try with resources :
 
 Whenever making use of resource oriented programming, use Try with resources block for exception handling.
+
+JAVA Regex : 
+
+[abcd] - Anyone of a, b, c, d
+[^abcd] - Any character except a, b, c, d
+[a-d][p-r] - a through d, or p through r: [a-dp-r] (union)
