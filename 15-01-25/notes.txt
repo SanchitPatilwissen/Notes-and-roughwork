@@ -1,0 +1,3 @@
+Immutable class : 
+
+We can use record to create immutable classes.
