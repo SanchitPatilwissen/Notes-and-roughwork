@@ -1,0 +1,36 @@
+
+Design Patterns in Java :
+
+1) Singleton classes : Using Lazy Instantiaton and Early Instantiaton. (Covered Yesterday)
+
+2) Factory Method : Restriction on creating the number of objects.
+
+3) AbstractFactory Method : Creating an abstract class or interface and extending/implementing it in child classes.
+
+interface Vehicle{
+    public static Vehicle getVehicle(String v);
+}
+
+class Car implements Vehicle{
+    ...
+}
+
+class Truck implements Vehicle{
+    ...
+}
+
+Vehicle v1 = Vehicle.getVehicle("car); 
+
+4) Prototype design pattern 
+
+Student s1 = new Student();
+
+Student s2 = s1.clone();
+Student s3 = s1.clone();
+Student s4 = s1.clone();
+
+Creating objects in this fashion is more faster compared to normal object creation.
+
+5) Builder design pattern : Property based object creation
+
+Vehicle v1 = Vehicle.setFuel('Petrol').setSeats(2).setWheels(4).build();  According to property mention object is returned.  
