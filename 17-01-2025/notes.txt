@@ -1,0 +1,11 @@
+1) Multithreading : 1 process ---> Multiple threads (Only 1 program) : 
+
+    Context switching between threads is faster than context switching between processes.
+    Resources are allocated per process and not per thread.
+    Used in a single application.
+
+2) Multitasking : Multiple processes (or Programs)
+
+    Used for different applications.
+
+Daemon thread : Background thread with least priority.
