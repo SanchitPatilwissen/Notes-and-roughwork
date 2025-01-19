@@ -42,11 +42,14 @@ public class ImmutableClass{
     public static void main(String[] args) {
         Student s1 = new Student(10, "Sancho", 10);
         Student s2 = new Student(123, "Jayden", 2);
+        Student s3 = new Student(10, "Sancho", 10);
 
         System.out.println(s1);
         System.out.println(s2);
+        System.out.println(s3);
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
+        System.out.println(s3.hashCode());
         System.out.println(s1.schoolName());
         System.out.println(s2.schoolName());
     }
