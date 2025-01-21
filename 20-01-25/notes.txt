@@ -10,3 +10,4 @@
    System.exit() --> To terminate the program.
 
 5) Runtime is a class which is used to run any non java application.
+
