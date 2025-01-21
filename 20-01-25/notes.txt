@@ -1,0 +1,12 @@
+1) String vs StringBuffer :
+    String is immutable, StringBuffer is mutable.
+
+2) String builder : It is mutable but unsynchronised. Whereas StringBuffer is synchronised.
+
+3) System.gc() --> Request to garbage collector to remove the object.
+
+4) System.out --> prints in terminal/console
+   System.setOut() --> To write to file.
+   System.exit() --> To terminate the program.
+
+5) Runtime is a class which is used to run any non java application.
