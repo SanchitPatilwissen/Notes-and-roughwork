@@ -1,0 +1,33 @@
+java packages :
+
+1) java.lang --> By default all packages are imported
+
+2) java.util --> 
+    Scanner, Random, Date, Stack, Calendar, GregorianCalendar, BitSet, ArrayList, LinkedList, HashSet, HashMap, TreeMap, TreeSet, LinkedHashSet
+
+    (1) Scanner : To take input from console, file or any input stream.
+    (2) Random : To generate random numbers
+    (3) Date : To create date object comprising of date along with time. Time elapsed from 01/01/1970 00:00:00 calculated in milli secs.
+    (4) 
+
+Collection framework classes :
+Those classes which can hold more than one classes.
+
+Collection interface extended By
+1) Set
+    HashSet --> Uses Hashing algo. Searching is fast but order is not maintained.
+    TreeSet --> Uses binary tree to store data. Searching is slow but order is maintained. 
+    LinkedSet --> Elements stored in the order you entered. 
+2) Queue 
+    Deque --> Double ended queue. Both sides will be open.Implemented using ArrayDeque. Can be used in Lifts.
+    PriorityQueue --> Elements are popped out based on priority.
+3) List 
+    By default FIFO order.
+    Vector --> Older class. Stack extends Vector class. (All methods are synchronised)
+    ArrayList --> Newer class. (No methods are synchronised). Used where less insertion/deletion but more accessing. Real time use in Schools/Colleges.
+    LinkedList --> Used where more insertion/deletion but less accessing. Real time use in IRCTC website where insertion/deletion of tickets happens more.
+Map
+    HashTable --> synchronised methods.
+    HashMap --> no synchronised methods. Allows null key, value.
+    TreeMap --> Sorted order is maintained.
+    LinkedHashedMap --> Actual order is stored.
