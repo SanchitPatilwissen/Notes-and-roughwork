@@ -1,0 +1,50 @@
+1) java.io
+
+    Stream
+    Input Stream
+    Output String
+
+    Byte Stream --> ASCII format (1 byte/character) --> Used for input from hardware devices
+        InputStream class
+            FileInputStream
+            BufferInputStream
+            PipeInputStream
+            ...
+            DataInput (Interface)
+            DataInputStream (Class implementing DataInput)
+        OutputStream class
+            FileOutputStream
+            BufferOutputStream
+            PipeOutputStream
+            ...
+            DataOutput (Interface)
+            DataOutputStream (Class implementing DataOutput)
+            PrintStream
+    character Stream --> Unicode format(2 bytes/character) --> Used for reading and writing data to softwares(APIs)
+        Reader class
+            FileReader
+            BufferedReader
+            ...
+        Writer class
+            FileWriter
+            BufferedWriter
+            ...
+            PrintWriter --> Used to write to browser, file.
+
+    File class : 
+        exists()
+        createNewFile()
+        delete()
+        canWrite()
+        isFile()
+        isDirectory()
+        mkdir()
+        list()
+        length()
+        rename()
+
+    2 interfaces to read in terms of datatypes : (Also called filter classes)
+        DataInput (Interface)
+        DataInputStream (Class implementing DataInput)
+        DataOutput (Interface)
+        DataOutputStream (Class implementing DataOutput)
