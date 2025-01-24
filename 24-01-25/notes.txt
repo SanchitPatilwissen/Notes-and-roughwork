@@ -1,0 +1,38 @@
+1) Serialization : Converting an object into byteStream so that it can be persisted directly by hard-disk.  
+
+    static and transient variables are not serialized. transient variables are used to refer to password/security required variables.
+
+2) Design Principles :
+
+    DRY - Do not Repeat yourself.
+    KISS - Keep it simple and stupid/straight
+    S - Single Responsibility Principle
+    O - Open/Closed Principle
+    L - Liskov Principle --> Child classes must be substitutable for their parent class.
+    I - Interface Segregation Principle --> Breaking down big interfaces into smaller ones.
+    D - Dependency Inversion Principle --> 
+
+
+Example : 
+
+class Employee{
+    name, age, salary, etc.
+
+    setter/getter;
+
+
+}
+
+3) Clean Code Practises
+
+    (1) Choose noun words as class
+    (2) Choose verb words as methods
+    (3) Choose entities on which action is performed or the entities required to perform the action as variables
+    (4) Variable/Method names --> small letter
+    (5) Interface/Enums/classes --> first Capital letter
+    (6) Package names --> small (all)
+    (7) Constants --> All letters Caps and more than 1 word then seperated by _
+    (8) Give clear names
+    (9) Avoid redundant comments, Misleading, Journal/documentation.
+    (10) Exception Handling(Both Resources based and non Resource Based)
+    
