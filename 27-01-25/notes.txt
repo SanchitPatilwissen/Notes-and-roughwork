@@ -54,3 +54,16 @@
     ::::::::::
     // rollback; --> It will roll back to beginning
     rollback to s2;
+
+    6) Rules for DBMS (PostgreSQL) :
+        1) Database name in small case
+        2) Rest all in upper case
+
+    7) Keys in PostgreSQL
+        1) Primary Key
+        2) Foreign Key
+        3) Unique key --> there can be multiple unique keys.
+        4) Candidate key --> All keys which are eligible to be Candidate keys.
+        5) Alternate key
+        6) Composite key
+        7) Surrogate key
