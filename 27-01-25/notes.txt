@@ -1,0 +1,56 @@
+1) Database :
+
+    (1) Types of Database :
+        (1) Flat file
+        (2) DBMS
+        (3) ORDBMS
+        (4) SQL
+        (5) NoSQL
+        (6) Network Database
+        (7) Heirarchical Database
+
+        90% of data is still stored in non rdbms.
+
+        3 types of data :
+        (1) Structured --> Has labels, Stored in csv, xml.
+        (2) Semi Structured --> Still organised but not as organised as Structured data. Like JSON(Key value pairs). Without Labels.
+        (3) Unstructured - audio, emails, images --> without labels stored in file format.
+
+    (2) SQL                        vs                          NoSQL
+        Schema Based                                           Non schema Based
+
+    (3) Types of Languages in IT industry
+
+        Programming Languages --> OOP(C++, java, .net, etc), POP(C, ....)
+        Scripted Languages --> JS, shell, VBS etc. (Completely interpreted Languages)
+        Markup Languages --> HTML, XML, etc.
+        Querying Languages --> SQL, NoSQL, PL/SQL, XQuery, etc.
+
+    (4) Types of SQL :
+        1) DDL --> Data Definition Language --> Used to build and modify schema --> CREATE, ALTER, RENAME, DROP, TRUNCATE.
+        2) DML --> Data Manipulation Language --> Used to modify contents of data --> INSERT, DELETE, UPDATE.
+        3) DCL --> Data Control Language --> Used to control permissions/authorization --> GRANT(To grant permission), REVOKE(To take back the permission).
+        4) TCL --> Transaction Control Language --> Used to control transaction --> COMMIT, ROLLBACK, SAVEPOINT.
+        5) DQL --> Data Query/Retrieval Language --> SELECT
+
+    5) TCL
+
+    Table
+    ------
+
+    ::::::::::
+    ::::::::::
+    ::::::::::
+    set savepoint s1;
+    ::::::::::
+    ::::::::::
+    ::::::::::
+    set savepoint s2;
+    ::::::::::
+    ::::::::::
+    ::::::::::
+    set savepoint s3;
+    ::::::::::
+    ::::::::::
+    // rollback; --> It will roll back to beginning
+    rollback to s2;
