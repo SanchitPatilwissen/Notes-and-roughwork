@@ -1,0 +1,114 @@
+Procedures in PostgreSQL : 
+
+Similar to functions 
+
+1) For inserting into table : 
+
+create or replace procedure abc(
+	eid int,
+	ename varchar(20),
+	age int,
+	email varchar(100)
+)
+language plpgsql
+as $$
+begin
+	insert into EMPLOYEE values
+	(
+		eid,
+		ename,
+		age,
+		80000,
+		'MANAGER',
+		null,
+		email,
+		'YES'
+	);	
+end
+$$
+
+call abc(37, 'Hema Sagbhor', 34, 'hemSag56@gmail.com');
+
+2) Procedure to increment salary : 
+
+
+create or replace procedure appraisal(
+	empid int
+)
+language plpgsql
+as $$
+begin
+	update EMPLOYEE set salary = salary + 5000 where eid = empid;
+end
+$$
+
+call appraisal(23);
+
+3) Functions 
+
+create or replace function max_salary(desig DESIGNATION_TYPE)
+returns table (empid int, ename varchar, esalary decimal)
+as $$
+begin
+	return query
+	select eid, name, salary from EMPLOYEE where designation = desig and salary = (select max(salary) from EMPLOYEE where designation = desig);
+end;
+$$ language plpgsql;
+
+drop function max_salary;
+
+select * from max_salary('TESTER');
+
+4) Use of Procedures/Functions :
+
+    When there are multiple databases used in our java application then we write our logic in java code itself.
+
+5) Windowing functions : 
+
+    1) row_number()
+
+        select eid, name, salary, row_number() over(partition by designation order by eid) from EMPLOYEE;
+
+    2) rank()
+
+        select eid, name, salary, rank() over(partition by designation order by eid) from EMPLOYEE;
+    
+    3) dense_rank()
+
+        select eid, name, salary, dense_rank() over(partition by designation order by eid) from EMPLOYEE;
+
+    4) lag()
+
+        select eid, name, salary, lag() over(partition by designation order by eid) from EMPLOYEE;
+
+    5) lead()
+
+        select eid, name, salary, lead() over(partition by designation order by eid) from EMPLOYEE;
+
+6) Compressed Table Expression (cte) :
+
+    select * 
+    from cte
+    where cte.average_salary<cte.salary; 
+
+7) Triggers :
+
+    create or replace function validate_salary()
+    returns trigger as $$
+    begin
+        if new.salary<12000 then
+            new.salary = 12000;
+        end if;
+        return new;
+    end;
+    $$ language plpgsql;
+
+    create or replace trigger before_updating_salary
+    before update on EMPLOYEE
+    for each row 
+    EXECUTE function validate_salary();
+
+    update EMPLOYEE set salary = 10000 where name = 'Kaif Ali Sayyed';
+
+
+8) Truncate vs delete : delete comes under transaction but truncate doesn't. delete can be rolled back but not truncate.
