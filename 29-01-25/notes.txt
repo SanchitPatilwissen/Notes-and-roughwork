@@ -1,0 +1,24 @@
+JDBC : JAVA DATABASE CONNECTIVITY (SunMicrosystem --> Company which created java) --> Used in any OS
+
+ODBC : OPEN DATABASE CONNECTIVITY (Microsoft) --> Only used in windows OS
+
+Driver : Program which knows how that hardware works.
+
+1) Steps for connecting to DB : 
+    1) Load/Register Driver.
+        1) JDBC - ODBC bridge
+        2) Part-Java Part-Native
+        3) Pure Native
+        4) Pure Java (THIN drivers cause light weight)
+        Class.forName("driver-class") --> For loading the driver.
+
+    2) Connect to DATABASE
+        DriverManager.getConnection(url, username, password);
+    3) Create a statement object.
+        Statement stmt = con.CreateStatement(); --> Just like keeping paper and ink in printer
+    4) Execute queries.
+        stmt.executeUpdate("insert/update/delete ...etc");
+        ResultSet = stmt.executeQuery("select * from ...");
+
+2) Types of statements : 
+    1) Simple Statement
