@@ -4,6 +4,8 @@ ODBC : OPEN DATABASE CONNECTIVITY (Microsoft) --> Only used in windows OS
 
 Driver : Program which knows how that hardware works.
 
+# Command to set class path : set classpath=C:\Users\Wissen\Desktop\Notes and Rough Work\29-01-25\pgs_driver\postgresql-42.7.5.jar;.;%classpath%
+
 1) Steps for connecting to DB : 
     1) Load/Register Driver.
         1) JDBC - ODBC bridge
@@ -22,3 +24,4 @@ Driver : Program which knows how that hardware works.
 
 2) Types of statements : 
     1) Simple Statement
+
