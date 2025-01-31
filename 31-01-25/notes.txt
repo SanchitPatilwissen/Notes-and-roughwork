@@ -28,3 +28,5 @@ mongod (server side)
 mongosh (client side) CLI
 mongo-compass (client side GUI)
 mongo atlas (cloud based)
+
+
