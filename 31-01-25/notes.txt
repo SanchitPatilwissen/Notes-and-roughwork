@@ -1,0 +1,30 @@
+Rowset --> Present in javax.sql.rowset package.
+
+One object is created for all database operations.
+
+Difference between Rowset and Resultset --> Rowset 1 api for all.
+
+1) Types of RowSet : 
+    CachedRowSet
+    JdbcRowSet
+    FilteredRowSet
+    JoinRowSet
+
+    WebRowSet
+
+2) SQL              vs               NoSQL
+   Schema based                      Schema less
+   ordered                           unordered
+   Tables                            Collections
+   Rows/Records                      Document
+   Fields, columns                   key : value pair
+   English like statements           Object.method/function calls
+                                     
+                                     eg : - MongoDB, Cassandra DB, Dynamo DB, Redis
+
+3) MongoDB
+
+mongod (server side)
+mongosh (client side) CLI
+mongo-compass (client side GUI)
+mongo atlas (cloud based)
