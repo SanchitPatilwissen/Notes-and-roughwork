@@ -1,0 +1,9 @@
+1) Types of Result set :
+    1) READ_ONLY
+    2) UPDATABLE
+    3) FORWARD_ONLY
+    4) SCROLLABLE
+
+    By default it is statement = con.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY)
+
+    To set to updatable : statement = con.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE)
