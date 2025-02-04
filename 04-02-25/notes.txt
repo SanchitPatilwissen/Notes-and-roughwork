@@ -1,0 +1,19 @@
+Advance Java Features : 
+record Enum
+for-each loop try-with-resources
+sealed class
+H
+interface with multiple(static, default, private) methods with body
+Functional interface
+Lambda expression
+Method references forEach() method 
+Predicate
+Stream API
+Date & Time API
+Optional API
+
+1) Lambda expressions were added in java to support functional programming i.e. we pass some method(consisting of some logic) to another method and can also return the function back.
+
+2) assertEquals(expected, actual, "message")
+
+message there will be unnecessary creation of multiple objects. That's the reason why we can pass function as an argument to the above function. Hence the string object will only be created when function is called and not always.

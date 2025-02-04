@@ -24,6 +24,11 @@ class B implements AutoCloseable{
     public void close(){
         System.out.println("** Closing the resources for B **");
     }
+
+    public void demo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'demo'");
+    }
 }
 
 public class TryWithResources {
