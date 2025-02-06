@@ -1,0 +1,22 @@
+# Stream APIs
+
+1) Sequential - By default stream api is Sequential
+2) Parallel
+
+3 phases in stream API : 
+
+1) Initialization --> Collection object -> stream
+2) Processing --> stream -> stream (Some operation is performed)
+3) Termination --> stream -> Collection object
+
+For Processing we have many methods like map(), filter, etc.
+
+Note :  Package used is java.util.stream.Stream which contains stream processing methods.
+
+# Comparison between map, filter and reduce
+
+Operation  Input   Output
+---------  -----   ------
+map         n       n
+filter      n       <=n
+reduce      n       1
