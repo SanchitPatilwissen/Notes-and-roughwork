@@ -1,0 +1,23 @@
+Concurrent API :
+1) Semaphore API --> Used to execute a batch of threads together.
+2) Phaser API --> Used when a current batch of thread need to finish first then other batch can start execution.
+3) CyclicBarrier
+4) Exchanger
+5) CountDownLatch
+
+Types of threadpool : 
+
+1) Single threadpool 
+2) Fixed threadpool
+3) Dynamic threadpool
+4) Scheduled/timed threadpool
+    (1) Fixed interval
+    (2) Fixed delay
+5) Custom threadpool
+
+2 types of API to create a threadpool and submit a task
+ --> Executors - Create / Choose the threadpool 
+and 
+ --> ExecutorService - Submit the task to threadpool/manage the threadpool
+
+# CountDownLatch --> Used to start all the 
