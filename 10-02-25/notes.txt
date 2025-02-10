@@ -1,0 +1,104 @@
+Software Development Process : 
+
+1) Planning and designing
+2) Requirement gathering and analysis
+3) Coding
+4) Building
+5) Testing
+6) Release/Deploy
+7) Maintainance and monitoring
+
+SDLC phases : 
+1) Plan -> JIRA, ...
+2) Code -> Eclipse, VSC, STS, IntelliJ idea, Git, Github,...
+3) Build -> Ant, Maven, Gradle, etc.
+4) Test -> JUnit, Mockito, Selenium, Jest, Jasmine, Karma, etc.
+5) Release -> Jenkins, CI/CD,TeamCity, etc.
+6) Deploy -> Docker, Containerd,...
+7) Operate -> Kubernetes, Ansible,..
+8) Monitor -> Grafana, Splunk, ...
+
+Half of the things will be done by developers and half is done by administrators.
+
+administrators --> DevOps 
+
+SDLC Models
+1) Waterfall
+2) Spiral
+3) V-model 
+4) Agile
+
+Full Stack Developer : Frontend, Backend
+
+Full Stack Engineer : Frontend, Backend, DevOps
+
+Dev Ops Tools : 
+
+1) Docker
+2) Jenkins
+3) Microsoft Teams
+4) Google Drive
+5) MS Office
+6) Git 
+7) NodeJS
+8) Eclipse
+9) VS Code
+
+
+Kanban
+SCRUM
+XP
+etc..
+
+# GIT --> Global Information Tracker, Source Code Management Tool (SCM)
+1) Able to track the changes
+2) Identify who changed
+3) Helps in collaboration
+
+Git                                              Github
+----                                             ------
+1) Client Side(Locally available)               1) Server Side(On cloud)
+2) CLI tool                                     2) UI/UX
+
+3 repositories created when "git init" command is fired : 
+1) Working
+2) Staging
+3) Local Repo 
+
+# Commands
+
+git add command --> Working area to staging area.
+
+git rm --> Staging to working area.
+
+git commit --> Staging to Local Repo
+
+git status --> Shows the status of the file.
+
+git diff --> Shows the insertions/deletions.
+
+git show --> Gives the last changes in the file
+
+git log --> Shows the commits.
+
+git branch --> shows the current branch
+
+git branch branch_name --> Creates new branch 
+
+git checkout branch_name --> switches branch 
+
+Note : if we are in working area then the modified file is available to all the branches.
+
+git merge branch_name --> merges 2 branches.
+
+git branch --delete branch_name --> Deletes the branch.
+
+git tag v3.1 --> Noting the version.
+
+git tag -d 3.0 Commit_code --> Delete the version at that commit
+
+# Git Flow vs GitHub Flow : 
+
+Git Flow --> Multiple branches for same purpose
+Github flow --> 2 types of branches.
+
