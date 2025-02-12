@@ -1,0 +1,31 @@
+Build Tools : 
+
+Maven, Ant, Gradle --> Project management tool.
+
+POM --> Project Object Management/Model --> pom.xml file is derived from this.
+
+Functions : 
+1) It should be able to validate project structure.
+2) Dependency management
+3) Compile
+4) Test and generate reports
+5) Generate .jar files
+6) Reusable entities
+
+Maven has pom.xml which is a xml file. Step by Step.
+whereas, Gradle used build.gradle file which is written in groovy. Dynamic.
+
+# Maven Architecture --> Client and Server
+1) Client : mvn, .m2, Local Repo 
+2) Server : mvnrepository.com (remote repo)
+
+# Maven Artifacts/Properties/Attributes
+------------------------------------------
+Archetype (maven-archetype quickstart)
+Artifact ID
+Group ID 
+Package
+Version
+
+Command to generate a project : mvn archetype:generate
+

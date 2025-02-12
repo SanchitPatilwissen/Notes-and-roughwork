@@ -1,0 +1,31 @@
+Testing : 
+
+Unit Testing --> Junit
+Integration Testing --> Mockito
+
+Black box Testing
+White box Testing
+Sand box Testing
+Grey box Testing
+
+Manual Testing
+Automation Testing
+
+Alpha Testing
+Beta Testing
+
+End to end Testing --> Selenium (Automated Testing)
+
+Performance/Load Testing --> JMeter
+
+REST API call Testing --> Postman, SOAP UI, ARC, etc..
+
+Junit : 
+---------
+JUnit 3
+JUnit 4
+JUnit 5 - Jupiter
+    --> Lambda expression
+    --> Multiple new patterns
+    --> Microservices
+    --> Many new features
