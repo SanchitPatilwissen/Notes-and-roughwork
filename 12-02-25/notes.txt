@@ -29,3 +29,14 @@ JUnit 5 - Jupiter
     --> Multiple new patterns
     --> Microservices
     --> Many new features
+
+Test Driven Development --> First test cases are written then implementation.
+Test Runner --> Who is running all the test cases.
+
+# Difference between assumption and assertion : 
+
+--> assertion --> Used to test the functionality
+--> assumption --> Used to decide whether to assert or not.
+
+Note : For every test method there is an object created of test Class. Adding @TestInstance(Lifecycle.PER_CLASS) above class will help in creating only 1 object for all test cases which will improve a lot of memory by creating less object and thus improving the Performance.
+

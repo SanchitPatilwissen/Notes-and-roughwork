@@ -19,4 +19,8 @@ public class Calculator {
 		else 
 			throw new ArithmeticException();
 	}
+	
+	public int mod(int a, int b) {
+		return a%b;
+	}
 }
