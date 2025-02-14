@@ -1,0 +1,3 @@
+Jenkins --> CI/CD tools
+
+1) Automated building and testing of applications

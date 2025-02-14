@@ -1,0 +1,57 @@
+# 3 types of environment :
+1) Development
+2) Testing
+3) Production
+
+Containerization vs Virtualization : 
+
+1) In VM each VM has its own OS whereas containers may/maynot have its own OS. --> OS independency of containers.
+
+2) VMs have a fixed number of resources allocated, whereas containers have dynamic allocation of resources when required. --> Resource Efficiency of containers.
+
+3) The inner OS of containers will interact with outer OS of machines using an engine whereas incase of VMs it happens through hypervisors.
+
+4) if we want a program to always work on a dedicated space then Virtualization is better than Containerization. eg :- AWS, or any other cloud infrastructure.
+
+# Docker Architecture : 
+
+1) Client --> Docker CLI, Docker Desktop
+              Docker Server/Engine/Daemon (Any command passed to CLI is passed to server for processing)
+              .docker folder where all dependency images are stored.
+2) Server --> Docker Hub
+
+# Docker commands
+1) docker --version
+2) docker info --> To check whether docker client and Docker server is running
+3) docker images --> shows all images
+4) docker ps -a --> Shows all containers 
+5) docker rm "container_id" --> To remove the image.
+6) docker rmi --> Removes all images.
+7) docker pull redis --> To download redis image 
+8) docker create redis --> To create a container 
+9) docker start 9cc1c2759f91 --> To run the container 
+10) docker ps --> Shows running containers 
+11) docker exec -i -t 9cc1c2759f91 sh --> To get inside a 
+12) docker stop 9cc1c2759f91 --> To stop the container from running
+13) docker run redis --> Combination of all the commands.
+14) docker kill id --> stop is more safer than this.
+
+# Docker file --> Information to be added
+1) Base OS
+2) Softwares
+3) Entrypoint/commands
+
+FROM alpine
+ 
+WORKDIR /root/demo
+COPY Abc.java /root/demo
+ 
+RUN apk add openjdk8
+ 
+ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
+ENV PATH $PATH:$JAVA_HOME/bin
+ 
+RUN javac Abc.java
+ 
+#CMD ["java", "Abc"]
+ENTRYPOINT java Abc
