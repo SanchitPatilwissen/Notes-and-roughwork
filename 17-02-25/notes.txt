@@ -1,0 +1,42 @@
+# Spring : 
+
+--> Spring is an umbrella which has all the frameworks within like hibernate, spring boot etc
+--> A framework is a implementations of design patterns. (Predefined implementations of design patterns)
+
+# Spring frameworks : 
+1) Spring core
+    Commonly asked question --> Difference between Dependency Injection(design pattern) and Inversion of Control(Principle) ?
+
+    Dependency Injection : 
+
+    class Car{
+        String name, brand, color ; float price; Wheel wheels, Engine engine. --> properties. 
+    }
+
+    Car is dependent on Wheel, Engine etc.
+
+    Dependency Injection Types : 
+    1) Constructor Injection
+    2) Setter Injection
+    3) Field Injection
+
+    Inversion of Control Types : 
+    1) BeanFactory
+    2) ApplicationContext
+
+2) Spring web mvc
+3) Spring REST
+4) Spring Data JPA
+5) Spring Test
+6) Spring AOP
+etc..
+
+
+## what is SpringBoot --> Modern way of creating Spring applications.
+Modern Features of SpringBoot : 
+1) Autoconfiguration --> Less number of annotations.
+2) Spring Initializr/Starter kit
+3) Embedded server
+4) Inbuilt Database --> Comes with inbuilt h2 database 
+5) Actuators --> Like a health checkup for application, runtime behaviour of application
+6) Support for microservices.
