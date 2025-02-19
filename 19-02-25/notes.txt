@@ -74,3 +74,18 @@ PATCH --> Update data (Can update some attributes), faster.
 DELETE --> Remove data 
 
 REST API = URL + Http Method 
+
+5) Default response format : 
+
+@RestController
+public class MyController {
+	@GetMapping(path="/", produces="text/html")
+	public String abc() {
+		return "<h1>Welcome to the website<h1>";
+	}
+}
+
+6) REST Parameter types : 
+    (1) Query Params --> Both key and value visible in url 
+    (2) Path Parameter --> Only value visible in url 
+    (3) Body Parameter --> Nothing is visible in url 
