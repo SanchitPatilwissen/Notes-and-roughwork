@@ -1,0 +1,76 @@
+SpringBoot Responses : 
+
+1) @RequestMapping("/") --> To give response for "/" url
+2) @ResponseBody --> When we dont want to return view but html body.
+3) Automatic Object Mapping : 
+
+    @RequestMapping("/insertDetails")
+	public ModelAndView setDetails(Customer c) {
+		ModelAndView mv = new ModelAndView();
+		System.out.println(c);
+		if(!Database.isIdPresent(c.getId())) {
+			Database.createCustomer(c.getId(), c.getName(), c.getPwd());
+			mv.addObject("uname", c.getName());
+			mv.setViewName("welcome.jsp");
+		}else {
+			mv.addObject("error", "User with same Id already exists");
+			mv.setViewName("failure.jsp");
+		}
+		return mv;
+	}
+
+    public class Customer {
+	String id;
+	String name;
+	String pwd;
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+    }
+
+4) REST API
+
+REST --> REpresentational State Transfer. Used to provide services.
+
+Service in Software industry : If any application(anyone) can invoke it then its called a service.
+
+Services expose their logic as rest api so that everyone (all types of technoloy) can access it.
+
+SOAP Webservice --> Simple Object Access Protocol.
+
+RESTful service               vs               SOAP webservice
+----------------                               -----------------
+REpresentational State Transfer                Simple Object Access Protocol
+Resource Oriented Architechture                Service Oriented Architechture
+Supports JSON/XML/CSV/Plain, etc.              XML
+HTTP                                           SOAP/HTTP or SOAP/JMS
+Easy/Lightweight                               Slower
+stateless protocol                             Stateless / Stateful
+Single URL can perform multiple ops            Multiple services for different task
+More Preferred now                             Less Preferred now 
+
+Http methods (CRUD)
+-------------
+GET --> Fetch data
+POST --> Creating data 
+PUT --> Update data (Completely replaces entire row with new object), must be used when all attributes are required.
+PATCH --> Update data (Can update some attributes), faster.
+DELETE --> Remove data 
+
+REST API = URL + Http Method 
