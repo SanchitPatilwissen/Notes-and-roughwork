@@ -1,0 +1,21 @@
+Spring Data JPA
+----------------
+1) JDBC
+2) ORM
+3) Hibernate, iBatis, TopLink, etc.
+4) JPA 
+
+ORM - Object Relational Mapping
+
+class Employee{
+    String name, int id, int age, double salary, String designation;
+}
+
+This object is mapped into a relation using an ORM. ORM is a concept not a technology just like OOP.
+
+Hibernate is a framework(technology) which implements ORM.
+
+If we change our framework then we will have to change the entire application. This is the reason why we follow JPA standard.
+JPA contains some standard interfaces which are implemented by hibernate, iBatis, TopLink, etc.
+
+There is an inbuilt dependency on h2 database. We can use it if we donot have any db on system.
