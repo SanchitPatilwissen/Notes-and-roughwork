@@ -1,0 +1,17 @@
+# Microservices --> Architecture
+
+Traditional Architecture --> Monolithic applications
+
+Monolithic                                     Microservices
+----------                                     -------------
+Single server                                  Multiple servers
+Single DB                                      Multiple DBs
+All modules in single server                   Isolated on its own server and DB
+
+Steps for Microservices : 
+1) Create services
+2) Register services in Eureka server
+3) Discover the services from Eureka server
+4) Load Balancing
+5) Fail Over
+6) API Gateway
