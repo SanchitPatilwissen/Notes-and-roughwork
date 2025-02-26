@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width : 1000px){
+            body{
+                background-color: red;
+                color: yellow;
+            }
+        }
+        @media screen and (max-width : 700px){
+            body{
+                background-color: purple;
+                color: white;
+            }
+        }
+        div{
+            width: 80px;
+            background: purple;
+            padding: 20px;
+            color: white;
+            animation-name: p2w;
+            animation-duration: 5s;
+            /* animation-delay: 5s; */
+            animation-iteration-count: 3; /* count for which it would occur --> Can also be infinite */
+        }
+        @keyframes p2w {
+            from {background-color: purple; color: white;}
+            to {background-color: white; color: black;}
+        }
+    </style>
+</head>
+<body>
+    <h1>This is to demonstrate media query</h1>
+    <hr>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam mollitia at porro unde asperiores eligendi adipisci aspernatur illo, molestiae aut, ipsa ipsam maiores sit repellendus labore. Obcaecati, consectetur maxime?</h5>
+    <hr>
+    <h3>Thank You</h3>
+    <div>Watch me as I change my color</div>
+    
+</body>
+</html>

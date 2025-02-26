@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Types</title>
+    <style>
+        /* div{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            padding: 20px;
+            margin: 50px;
+            border: 2px solid red;
+        } */
+        .my-flex-container{
+            display: flex;
+            background-color: yellow;
+        }
+        
+        .my-flex-container > div{
+            background-color: red;
+            padding: 20px;
+            margin: 10px;
+            color : white;
+        }
+
+        .my-calculator{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .my-calculator > div{
+            background-color: purple;
+            text-align: center;
+            padding: 10px;
+            margin: 2px;
+            color: white;
+            border-radius: 2px;
+        }
+        .my-calculator-text-box{
+            padding: 2px;
+            width: 150px;
+        }
+        .my-calc{
+            background-color: grey;
+            width: 180px;
+            padding: 10px;
+            margin: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box model</h1>
+    <hr>
+    <div>This is to hold the content with css box model</div>
+    <hr>
+    <h1>CSS Flex Box model</h1>
+    <hr>
+    <div class="my-flex-container">
+        <div>This is to hold the content with css box model</div>
+        <div>This is to hold the content with css box model</div>
+        <div>This is to hold the content with css box model</div>
+        <div>This is to hold the content with css box model</div>
+    </div>
+    <hr>
+    <h1>Grid Box model</h1>
+    <hr>
+    <div class="my-calc">
+        <div class="my-calculator-text-box">
+            <input type="text">
+        </div>
+        <div class="my-calculator">
+            <div>1</div><div>2</div><div>3</div><div>+</div>
+            <div>4</div><div>5</div><div>6</div><div>-</div>
+            <div>7</div><div>8</div><div>9</div><div>/</div>
+            <div>.</div><div>0</div><div>=</div><div>x</div>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

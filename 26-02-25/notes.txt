@@ -1,0 +1,62 @@
+UI/Frontend technologies : 
+
+1) HTML --> What to display
+2) CSS --> How to display
+3) JS --> How to behave/interact(decision making) --> Dynamicity and validation
+
+HTML
+----
+Necessary things so that HTML will work on any browser.
+1) We have to specify the language
+2) encoding format
+3) !DOCTYPE html to specify the dtd file
+
+
+HTML types : 
+------------
+text, password, checkbox, number, email, date, radio, file, pattern, range, url, submit(To send data to next page), reset(clear the data), button(custom logic)
+
+semantic tags --> <header>, <footer>, <section>, <article> etc.
+
+3 different types of CSS :
+---------------------------
+1) inline
+2) In style tag --> Internal/Embedded
+3) Seperate CSS file --> External
+
+CSS selector types :
+------------------------
+1) ID selector --> #
+2) class selector --> . --> widely used
+3) tag/Element selector --> tag name
+4) Attribute selector --> []
+5) Wildcard selector --> *
+6) Child selector --> >
+
+Pseudo-type selectors : 
+------------------------
+a:hover
+a:active
+a:visited
+a:link
+
+p:first-child 
+p::first-letter
+p::first-line
+
+Box types 
+----------
+1) CSS Box model
+2) Flex model
+3) Grid model
+
+Media Queries (We use bootstrap nowadays to make it easier)
+--------------
+@media
+screen
+min-width
+max-width 
+
+key-Frames
+----------
+Used to apply animation
