@@ -1,0 +1,64 @@
+# Javascript : 
+
+Javascript               vs               Java
+------------                              ------
+Scripting language                        Programming language
+Interpreted                               Compiled & Interpreted
+Dynamically/loosely typed                 Statically/strictly typed
+Object based                              Object Oriented
+; is optional                             ; is mandatory
+String can be ''/""                       Only in ""
+
+# Javascript Types : 
+--------------------
+1) Core Javascript --> Can work on both the side, variables, constants, datatypes, operators, operands, control statements, Inbuilt functions, custom functions, inbuilt objects, custom objects, Timer apis, rest and spread, etc.
+2) Client side Javascript --> BOM, DOM, Event Handling, etc. (Angular, React, Vue JS)
+3) Server side Javascript --> File Handling, DB ops, Middleware etc. (Node, express JS)
+
+# datatypes in js : 
+1) undefined
+2) number
+3) string 
+4) boolean
+5) object
+6) function
+
+# operators 
+-------------
+Arithmetic : +, -, *, /, %
+Conditional : ?, :
+Bitwise : &, |, ^
+Logical : &&, ||, !
+Assignment : =, +=, -=. *=, /=, %=
+shift : >>, <<
+incr/decr : ++, --
+spread/Rest : ...
+Arrow : =>
+Equality : ==, ===
+Optional chaining : : ? .
+
+Inbuilt function : 
+------------------
+typeof() function
+isNaN()
+eval()
+parseInt()
+parseFloat()
+setTimeout()
+SetInterval
+clearTimeout
+clearInterval
+etc.
+
+custom functions :
+--------------------
+Using 'function' keyword
+Anonymous function
+arrow function 
+using new function()
+
+JS Editions
+------------
+ES5      -  Java Script
+ES6      -  ECMA Script (ES5 + OOPs)
+ES7      -  Type Script (ES6 + Data Types)
