@@ -1,0 +1,22 @@
+Browser Object Model (BOM) : 
+------------------------------
+window --> root object in client js
+    alert()
+    confirm()
+    prompt()
+    close()
+    open()
+    
+    other objects in window : location, history, navigator, screen, document
+
+Document Object Model(DOM):
+----------------------------
+DOM parser
+DOM APIs
+
+document --> We can access any element using this object
+frames
+forms
+anchors
+buttons
+etc.

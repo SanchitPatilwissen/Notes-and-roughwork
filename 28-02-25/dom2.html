@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+    <script>
+        var flag = false;
+        function loginComponent() {
+            var loginHtml = `
+            <h3>Please Login</h3>
+            <form>
+        Username <input type="text" name="un" required><br>
+        Password <input type="text" name="pwd" required><br>
+        <br>
+        <button>LOGIN</button>
+        <button>RESET</button>
+    </form>`
+            var component = document.getElementById('login');
+            if (flag) {
+                component.innerHTML = loginHtml;
+                document.getElementById("login-header").style.color = 'red';
+            }
+            else {
+                component.innerHTML = "";
+                document.getElementById("login-header").style.color = 'blue';
+
+            }
+            flag = !flag;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Dom Demo</h1>
+    <hr>
+    <h3 id="login-header" style="color : blue;" onclick="loginComponent()">Login</h3><br>
+    <div id="login">
+    </div>
+    <hr>
+    <h3>Thank You</h3>
+</body>
+
+</html>

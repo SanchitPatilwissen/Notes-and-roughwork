@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+    <script>
+        function closePage() {
+            var flag = confirm("Do you really want to close the page?");
+            if (flag)
+                window.close();
+        }
+
+        function greetUser() {
+            var name = prompt("Please enter your name");
+            if (name)
+                document.write("<h2>Welcome ! " + name + "</h2>")
+
+        }
+        function redirectPage() {
+            location.assign("https://chatgpt.com/");
+        }
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.write("Geolocation is not supported by this browser.");
+            }
+        }
+        function showPosition(position) {
+            document.write("Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to Browser Object Model</h1>
+    <hr>
+    <h2>Window Object</h2>
+    <hr>
+    <script>
+        document.write("Windows is the root object");
+    </script>
+    <hr>
+    <h2>Alert</h2>
+    <hr>
+    <script>
+        alert("Good Morning");
+        document.write("Executed");
+    </script>
+    <hr>
+    <h2>Confirm and Prompt</h2>
+    <hr>
+    <button value="Close" onclick="closePage()">Close</button>
+    <button value="Greet" onclick="greetUser()">Greet</button>
+    <hr>
+    <h2>Location</h2>
+    <hr>
+    <button value="redirect" onclick="redirectPage()">Redirect</button>
+    <hr>
+    <script>document.write(location.protocol)</script>
+    <hr>
+    <script>document.write(location.pathname)</script>
+    <hr>
+    <h2>History</h2>
+    <hr>
+    <script>
+        //history.back();
+        // history.forward();
+        document.write("Not that preferable obj")
+    </script>
+    <hr>
+    <h2>Navigator Object</h2>
+    <hr>
+    <script>
+        document.write("Navigator Objects is used to keep track of sites/url visited. We can find the details of the browser.<br>")
+        document.write(navigator.appCodeName + "<br>");
+        document.write(navigator.appVersion + "<br>");
+        document.write(navigator.appName + "<br>");
+    </script>
+    <button value="geolocator" onclick="getLocation()">location</button><br>
+    <hr>
+    <h2>Screen Object</h2>
+    <hr>
+    <script>
+        document.write("Details about screen size!<br>")
+        document.write(screen.height + "<br>");
+        document.write(screen.width + "<br>");
+        document.write(screen.colorDepth + "<br>");
+    </script>
+    <hr>
+    <h3>Thank You</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30161.31068626778!2d72.8858624!3d19.1004672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1740723660036!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+
+</html>

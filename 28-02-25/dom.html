@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+    <script>
+        function welcome(fname, lastname){
+            alert("Welcome "+fname+" "+lastname);
+        }
+        function welcome2() {
+            fname = document.getElementByID('i1').value;
+            lname = document.getElementByID('i2').value;
+            welcome(fname, lname);
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello, This is DOM Demo</h1>
+    <hr>
+    <h2>Please Login</h2>
+    <hr>
+    <form>
+        First Name : <input type="text" name="t1" id="i1"><br>
+        Last Name : <input type="text" name="t2" id="i2"><br>
+        <button onclick="welcome(t1.value, t2.value)">submit</button>
+        <button onclick="welcome2()">submit2</button>
+
+    </form>
+    <hr>
+    <h3>THANK YOU</h3>
+</body>
+</html>
