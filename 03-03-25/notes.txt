@@ -1,0 +1,34 @@
+JS ES6 / ECMAScript features : 
+1) Arrow Functions
+2) Classes
+3) OOPs
+4) let
+5) const
+6) Promises
+7) Spread
+8) Rest
+9) async
+10) await
+11) Template literals
+12) for-in
+13) for-of
+14) default params
+15) Deconstructing/Destructuring
+16) Modules
+
+JS ES7 / TypeScript features : 
+1) Type safe
+2) interface
+3) Generics
+4) Exponential operator
+5) access modifiers/specifiers
+
+TypeScript --> JS --> Interpreted (Process of Transpilation)
+
+Points to remember about TypeScript:
+It is similar to Java but here are some differences : 
+1) Superclass constructor is not called by default in TypeScript
+2) There is no concept of constructor overloading in TypeScript (no concept of overloading/overriding)
+3) Interfaces in Ts is very much different from interfaces in java : 
+    (1) We can't iniliatize values of variables in interface in Ts
+    (2) We can create an object of interface in ts
