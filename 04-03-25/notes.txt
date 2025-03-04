@@ -1,0 +1,6 @@
+Note : In js/ts every function has its own this object created. But arrow functions don't create a seperate this object. This is the reason why we prefer to use arrow functions.
+
+ES5/JS concept : Closures, Event Bubbling, FCM, HOF
+
+Promises : Something which will be happening later. Promises are not always kept.
+Therefore there are 2 clauses.
