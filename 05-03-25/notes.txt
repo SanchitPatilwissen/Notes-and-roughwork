@@ -1,0 +1,16 @@
+Angular                            vs                          React
+--------                                                       -----
+Framework                                                      Library
+Complete Package                                               Minimal modules
+real dom                                                       virtual dom
+Google                                                         Facebook
+
+Angular JS                         vs                          Angular
+-----------                                                    -------
+Library                                                        Framework
+v1.x                                                           v2+
+Javascript                                                     Typescript
+controller oriented                                            Component oriented
+
+
+Angular incorporates view encapsulation.
