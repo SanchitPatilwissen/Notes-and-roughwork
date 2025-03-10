@@ -1,0 +1,17 @@
+Gradle is a build automation tool designed to manage project builds, dependencies and deployments.
+
+commands : 
+1) gradle -v --> Gives gradle version
+2) gradle init --> To initialize the gradle project
+3) gradle compile java --> To compile the java project
+4) gradle clean --> To clean
+5) gradle test --> To test the project
+6) gradle jar --> To create a jar file (Inside build/libs jar file is present)
+7) gradle run --> To run the aplication
+
+To create a java web application using gradle : 
+
+1) Initialize using gradle init and select the suitable options.
+2) Goto settings.gradle and do changes.
+3) delete app.java and apptest.java
+4)  

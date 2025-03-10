@@ -1,0 +1,17 @@
+<h1>Please Login</h1>
+<span>{{msg}}</span>
+<form (submit)="abc($event)">
+    <h3>
+        <label for="">Username</label>
+        <input type="text"> <br>
+        <label for="">Password</label>
+        <input type="password"><br>
+        <label for="">Role</label>
+        <select>
+            <option value="MANAGER">MANAGER</option>
+            <option value="ADMIN">ADMIN</option>
+            <option value="EMPLOYEE">EMPLOYEE</option>
+        </select>
+        <button type="submit">submit</button>
+    </h3><br><br>
+</form>

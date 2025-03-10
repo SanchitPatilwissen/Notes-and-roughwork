@@ -1,0 +1,21 @@
+Module
+------
+
+command : ng new project_name --no-standalone
+
+imports
+exports
+bootstrap
+declarations : Components, Pipes, directives
+providers : Services
+
+Note : In angular Module is a collection of Components, pipes, directives and Services.
+
+Routing
+--------
+
+we have app-routing.module.ts to mention routing path and corresponding components for those paths.
+
+we have to mention <router-outlet></router-outlet> where we want to apply routing.
+
+we use routerLink instead of href while using routing.

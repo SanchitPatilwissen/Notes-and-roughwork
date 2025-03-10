@@ -1,0 +1,40 @@
+Angular tutorial
+----------------
+
+Single page app divided into components.
+
+1) Installing Angular : 
+	Firstly you require nodejs installed on your system
+	Then run command : 
+	npm install -g @angular/cli
+2) Creating a new app : Generates base code
+	ng new app_name
+3) Creating a new component
+	ng g c component_name
+4) Creating a new pipe
+	ng g p pipe_name
+5) Creating a new service
+	ng g s service_name
+
+In index.html in body there is a tag named <app-root> which holds the actual app contents.
+
+# Adding bootstrap in angular project : 
+1) Install bootstrap using command : 
+	npm install bootstrap
+It is automatically added in package.json file and in node_modules
+2) Come to angular.json file and in build add bootstrap link in styles and script.
+"styles": ["./node_modules/bootstrap/dist/css/bootstrap.min.css"],
+"scripts": ["./node_modules/bootstrap/dist/js/bootstrap.js"],
+
+# Data Binding
+1) Interpolation 
+	Adding ts variables in html template using {{}}.
+2) Event Binding
+	using () to denote an event on a tag and mentioning the ts function.
+3) Property Binding
+	to inject ts variables and functions in properties of html tags, we mention properties as [].
+4) 2-way Binding
+	We use this to store the form values in variables 
+	[(ngModel)]="variable_name" --> Used in input-tag
+#Building application for production : 
+	ng build --prod
