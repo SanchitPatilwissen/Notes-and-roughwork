@@ -1,0 +1,26 @@
+React --> Used to create single page applications.
+
+return (
+        <h2>This is for JSX Demo</h2> --> virtual DOM
+    );
+
+# JSX(HTML + XML) rules 
+------------------------
+1) We can embed js code in jsx but it doesn't support if, else.
+2) JSX must always have one root element.
+
+
+
+HTML                          vs                   XML
+-----                                              ----
+Inbuilt tags and attributes                       Custom tags and attributes
+Closing tags are not mandatory                    Every opening tag must have a closing tag
+case insensitive                                  case sensitivity
+static                                            dynamic
+no proper nesting                                 strict nesting
+
+Props and state:
+------------------
+
+Props : Is passed in a component.
+

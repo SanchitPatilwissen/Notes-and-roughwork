@@ -1,0 +1,9 @@
+# Angular testing 
+
+Testing tool (unit testing) - jasmine
+Browser tool - Karma
+protractor - end to end testing tool used before
+
+# How to connect to the db.
+
+cors --> 
