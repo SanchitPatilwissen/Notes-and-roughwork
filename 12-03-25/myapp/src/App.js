@@ -2,6 +2,7 @@ import JsxDemo from './JsxDemo';
 import Greet from './Greet';
 import Counter from './Counter';
 import Welcome from './Welcome';
+import Effect from './Effect';
 
 function App() {
   const a = 100;
@@ -21,6 +22,7 @@ function App() {
       <Greet day="Wednesday" name="Sancho" />
       <Counter />
       <Welcome />
+      <Effect />
     </div>
   );
 }

@@ -1,0 +1,34 @@
+Difference between props and state : 
+
+props                      vs                       state
+------                                              ------
+cannot be modified                                  can be modified
+
+Different ways to create a react app : 
+
+1) npm install create-react-app
+   create-react-app my-app
+2) npx create-react-app my-app
+3) npm create vite
+
+# Using routing in react : 
+
+1) To install React-routing-dom
+npm install react-router-dom
+
+2) In main.jsx import BrowserRouter and add that tag in it.
+
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+)
+
+3) We use <link to="url_path"></link> to statically move from 1 page to another page.
+
+4) We import useNavigate hook which returns a function to dynamically move from 1 page to another page.
+
+Different types of Routers : 
+1) Browser router
+2) Memory router
+3) Hash router

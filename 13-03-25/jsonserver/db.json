@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Ravi",
+      "age": 24,
+      "salary": 30000,
+      "designation": "Tester"
+    },
+    {
+      "id": "2",
+      "name": "Karan",
+      "age": 29,
+      "salary": 50000,
+      "designation": "Programmar"
+    },
+    {
+      "id": "3",
+      "name": "Rajat",
+      "age": 43,
+      "salary": 100000,
+      "designation": "Manager"
+    },
+    {
+      "id": "4",
+      "name": "Shyam",
+      "age": 41,
+      "salary": 30000,
+      "designation": "Clerk"
+    },
+    {
+      "id": "5",
+      "name": "Kaif Ali Sayyad",
+      "age": 25,
+      "salary": 30000,
+      "designation": "TESTER"
+    }
+  ]
+}
