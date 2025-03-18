@@ -1,0 +1,5 @@
+Sharing data among multiple components occurs through props and state.But props are immutable and state cannot be shared. Therefore, there is a need for a technique to share data among multiple components in an editable way.
+
+We make use of Redux for this purpose. It can also be done using React Context API. (useContext)
+
+Redux is a state management Framework. It is not specific to React. It can be used with any other framework as well.
