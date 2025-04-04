@@ -128,3 +128,57 @@ Locks methods : (For reentrant lock)
 3) lock.tryLock() : Tries to acquire the lock. If the lock is not available, it returns false.
 4) lock.tryLock(1000, TimeUnit.MILLISECONDS) : Tries to acquire the lock for 1000ms. If the lock is not available, it returns false.
 5) Deadlock prevention is possible using reentrant locks.
+
+# Deadlocks : When 2 threads are waiting for each other to release the lock.
+
+Conditions when deadlock can occur : 
+1) Mutual Exclusion : Only one thread can access the resource at a time.
+2) Hold and Wait : A thread holds a resource and waits for another resource.
+3) No Preemption : A thread cannot be forced to release a resource.
+4) Circular Wait : A thread waits for a resource held by another thread which in turn waits for a resource held by the first thread.
+
+# Inter-thread communication : 
+1) wait()
+2) notify()
+3) notifyAll()
+
+# Executor FrameWork : java.util.concurrent
+
+Introduced in Java 5 to simplify the development of concurrent applications by providing a higher level of abstraction for managing threads and tasks.
+
+3 interfaces :
+1) Executor : Executes a task.
+2) ExecutorService : Executes a task and returns a Future object.
+3) ScheduledExecutorService : Executes a task after a delay or periodically.
+
+Use of callable vs runnable in executor.submit() : 
+
+Callable is used when we need to return something from the thread and runnable is used when we dont need to return anything from the thread.
+
+submit method returns Future object which can be used to get the result of the task after shutdown of executor.
+
+# ExecutorService methods : 
+1) submit(Runnable _input) --> Doesn't return anything.
+2) submit(Callable _input) --> Returns Future object.
+3) shutdown() --> Shuts down the executor.
+4) awaitTermination() --> Waits for the executor to finish execution.
+5) shutdownNow() --> Shuts down the executor immediately.
+6) isShutdown() --> Returns true if the executor is shut down.
+7) isTerminated() --> Returns true if the executor is terminated.
+8) isTerminating() --> Returns true if the executor is terminating.
+9) submit(Runnable _input, T result) --> Returns Future object with the result.
+10) invokeAll(Collection<Callable<T>> tasks) --> Executes all the tasks and returns a list of Future objects.
+11) invokeAll(Collection<Callable<T>> tasks, long timeout, TimeUnit unit) --> Executes all the tasks and returns a list of Future objects. If any task is not completed within the timeout, it is cancelled.
+
+# future object methods : 
+1) get() --> Returns the result of the task.
+2) get(timeout, unit) --> Returns the result of the task. If the task is not completed within the timeout, it throws TimeoutException.
+3) cancel(boolean mayInterruptIfRunning) --> Cancels the task. If mayInterruptIfRunning is true, the task is interrupted if it is running.
+4) isCancelled() --> Returns true if the task is cancelled.
+5) isDone() --> Returns true if the task is completed.
+
+# CountDownLatch : Used when we want to wait for multiple threads to finish execution before starting the main thread.
+
+Note : CountDownLatch is not reusable. Once count down reaches 0 then it cannot be used again. Therefore, if we want to reuse a latch then we can use CyclicBarrier.
+
+# CompletableFuture : Used to perform asynchronous programming in java.
