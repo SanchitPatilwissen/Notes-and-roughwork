@@ -1,0 +1,130 @@
+Visibility problem :
+
+	1. Volatile keyword
+	2. Synchronized keyword
+	3. Locks and condition variables
+	4. Atomic variables
+	5. ThreadLocal variables
+	6. Immutable objects
+	7. Explicit locks
+	8. Read-write locks
+	9. Semaphores
+	10. Barriers
+	11. FutureTask
+	12. Callable and Future
+	13. Executors
+	14. CompletionService
+	15. BlockingQueue
+	16. Concurrent collections
+	17. ConcurrentMap
+	18. ConcurrentSkipListMap
+	19. ConcurrentSkipListSet
+
+1) Volatile keyword : 
+	1. Volatile keyword is used to tell the compiler not to cache the value of a variable in a register or in a processor-local cache.
+	2. Volatile keyword is used to ensure that the value of a variable is always read from the main memory.
+	3. Volatile keyword is used to ensure that all the writes to a variable are written to the main memory.
+	4. Volatile keyword is used to ensure that the value of a variable is always read from the main memory.
+	5. Volatile keyword is used to ensure that the value of a variable is always read from the main memory.
+
+Disadvantages of volatile keyword : 
+
+When 2 threads try to access the same variable at the same time, the value of the variable is not guaranteed to be the same.
+
+That's why we use synchronized block/function or atomic variables.
+
+# Java Multithreading : 
+
+1 CPU has multiple cores(Single processing unit).
+
+program : set of instructions.
+
+eg : microsoft word, chrome, notepad, etc.
+
+process : instance of a program under execution.
+
+eg : 2 instances of chrome, 2 instances of notepad, etc.
+
+thread : smallest unit of execution within a process. A process can have multiple threads which share same resources but can run independently.
+
+eg : In microsoft word , there are multiple threads like spell checker, grammar checker which are executing concurrently.
+
+Google chrome can have multiple tabs which are executing concurrently.
+
+Multitasking : Executing multiple tasks at the same time.(Time sharing)
+
+# Methods to create a thread in java : 
+
+1) Extending Thread class : 
+
+class MyThread extends Thread --> The multithreading logic is written in the run() method(overrided) and an object of MyThread class is created and start() method is called on it.
+
+2) Implementing Runnable interface : 
+
+class MyThread implements Runnable --> The multithreading logic is written in the run() method(overrided) and an object of Thread is created and MyThread is passed to the Thread class constructor and start() method is called on it.
+
+3) Implementing Lambda expression : (Best method since a seperate class is not created. Hence your multithreading logic is secured and not accessible to other classes.)
+
+Thread t1 = new Thread(()->{
+    // multithreading logic
+});
+
+Lambda expression only works for functional interfaces. Since Input was a functional interface(Runnable interface), we can use lambda expression.
+
+# Thread LifeCycle : 
+
+1) New : Thread is created but not started.
+
+Thread t1 = new Thread(()->{
+    // multithreading logic
+});
+
+2) Runnable : Thread is started but not yet executing.
+
+t1.start();
+
+3) Running : Thread is executing.
+
+When CPU executes run method of thread, it is in running state.
+
+4) Blocked/Waiting : Thread is waiting for a resource.
+
+t1.join(); // main thread is waiting for t1 to finish execution.
+t1.sleep(1000); // main thread is waiting for 1000ms. (Timed Waiting)
+
+5) Terminated : Thread has finished execution.
+
+# Thread methods 
+1) t1.getState() : Returns the state of the thread.
+2) Thread.currentThread() : Returns the current thread.
+3) t1.getName() : Returns the name of the thread.
+4) t1.isAlive() : Returns true if the thread is alive.
+5) Thread.sleep(1000) : Sleeps the current thread for 1000ms.
+6) t1.join() : Waits for the thread to finish execution.
+7) t1.getPriority() : Returns the priority of the thread.
+8) t1.setPriority(10) : Sets the priority of the thread.
+9) t1.interrupt() : Interrupts the thread. If in sleep state, it will throw InterruptedException.
+10) Thread.yield() : Yields the thread. If in running state, it will give up the CPU.
+11) Thread.setDaemon(true) : Sets the thread as daemon thread. Daemon thread is a background thread which runs in the background. It is used to perform garbage collection.
+
+# Synchronization
+
+synchronized keyword is used to ensure that only one thread can access a method or a block of code at a time.
+
+block /code.
+
+Shared section / Synchronized part is called critical section.
+
+# Locks in java 
+
+2 types of locks : 
+
+1) Intrinsic lock : Lock associated with an object. We dont have to specify when to acquire and release the lock.
+2) Explicit lock : Lock associated with a Lock object. We have to specify when to acquire and release the lock.
+
+Locks methods : (For reentrant lock)
+1) lock.lock() : Acquires the lock.
+2) lock.unlock() : Releases the lock.
+3) lock.tryLock() : Tries to acquire the lock. If the lock is not available, it returns false.
+4) lock.tryLock(1000, TimeUnit.MILLISECONDS) : Tries to acquire the lock for 1000ms. If the lock is not available, it returns false.
+5) Deadlock prevention is possible using reentrant locks.
